@@ -1,8 +1,14 @@
 // import { useState } from "react";
-import "./App.css";
+import Hero from "./components/Hero";
+import Products from "./components/Products";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Hero />
+      <Products />
+    </>
+  );
 }
 
 export default App;
