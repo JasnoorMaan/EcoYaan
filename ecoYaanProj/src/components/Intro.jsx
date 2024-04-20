@@ -2,16 +2,27 @@ import trust from "../assets/trust.png";
 import impact from "../assets/impact.png";
 import authentic from "../assets/authentic.png";
 import fun from "../assets/fun.png";
+import aboutbg from "../assets/aboutbg.jpg";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Intro = () => {
   return (
-    <div className="py-16 px-8">
+    <div className="">
+      <div className="relative flex items-center justify-center h-[50vh] overflow-hidden mb-12">
+        <img
+          src={aboutbg}
+          className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
+        />
+        <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
+
+        <div className="absolute bottom-1 z-20 text-white text-center">
+          <h1 className="text-6xl font-outfit font-bold lg:text-9xl">
+            about ecoyaan.
+          </h1>
+        </div>
+      </div>
       <div className="flex flex-wrap">
-        <h1 className="text-6xl font-outfit font-bold lg:text-9xl">
-          about ecoyaan.
-        </h1>
-        <h4 className="py-4 font-outfit text-xl">
+        <h4 className="py-4 font-outfit text-xl py-16 px-8">
           At ecoyaan, we are more than just a platform. Our goal is to build a
           community of eco-conscious people who share a common vision and
           passion for a more sustainable world. We recognize that sustainability
@@ -41,8 +52,8 @@ const Intro = () => {
         </h4>
       </div>
 
-      <div className="py-12 flex flex-wrap items-center px-4">
-        <h1 className="text-6xl font-outfit font-bold lg:text-9xl">
+      <div className="py-12 flex flex-wrap justify-center items-center px-4">
+        <h1 className="text-6xl  font-outfit font-bold lg:text-9xl">
           Our Values
         </h1>
 
