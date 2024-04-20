@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.buttonWhite {
+  @apply bg-white text-black font-outfit font-bold text-xl py-3 px-4 rounded-3xl transition ease-in-out delay-100 hover:scale-105;
+}
+.buttonBlack {
+  @apply bg-black text-white font-outfit font-bold text-xl py-3 px-4 rounded-3xl transition ease-in-out delay-100 hover:scale-105;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

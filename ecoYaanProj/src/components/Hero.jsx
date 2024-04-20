@@ -2,7 +2,7 @@ import heroV from "../assets/heroV.mp4";
 
 const Hero = () => {
   return (
-    <div className="relative flex items-center justify-center h-[95vh] overflow-hidden">
+    <div className="relative flex items-center justify-center h-[95vh] overflow-hidden mb-12">
       <video
         src={heroV}
         autoPlay
@@ -19,9 +19,7 @@ const Hero = () => {
         <h1 className="font-pacifico text-4xl pb-16 font-semi lg:text-6xl lg:font-bold">
           Start your journey here
         </h1>
-        <button className="bg-white text-black py-2 px-6 rounded-lg">
-          Visit Marketplace
-        </button>
+        <button className="buttonWhite">Visit Marketplace</button>
       </div>
     </div>
   );

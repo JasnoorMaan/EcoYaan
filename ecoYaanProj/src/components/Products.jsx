@@ -31,7 +31,7 @@ export default function CarouselSize() {
                     <h1 className="font-outline text-3xl font-semibold">
                       {data.names}
                     </h1>
-                    <button className="">Shop</button>
+                    <button className="buttonBlack my-2">Shop</button>
                   </CardContent>
                 </Card>
               </div>
