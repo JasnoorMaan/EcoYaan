@@ -19,12 +19,12 @@ const Info = () => {
         {/* Windmill Image Div */}
         <div className="p-4 w-full md:w-1/3">
           <div className="relative group">
-            <img className="rounded-lg w-full" src={windmill} alt="image" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center opacity-100 bg-black bg-opacity-75 group-hover:bg-opacity-50 transition-opacity duration-300">
+            <img className="rounded-xl w-full" src={windmill} alt="image" />
+            <div className="rounded-xl absolute inset-0 flex flex-col items-center justify-center text-center opacity-0 bg-black bg-opacity-25 group-hover:bg-opacity-75 duration-300 hover:opacity-100">
               <h2 className="text-white font-outfit text-4xl font-bold p-4 lg:text-6xl">
                 Carefully Curated Products
               </h2>
-              <p className="text-white">
+              <p className="text-white font-outfit p-4  ">
                 Every purchase you make can have a positive impact on the planet
                 and its future. Soon, we will be connecting you with
                 eco-friendly and sustainable products that are carefully
@@ -37,12 +37,12 @@ const Info = () => {
         {/* Mountain Image Div */}
         <div className="p-4 w-full md:w-1/3">
           <div className="relative group">
-            <img className="rounded-lg w-full" src={mountain} alt="image" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center opacity-100 bg-black bg-opacity-75 group-hover:bg-opacity-50 transition-opacity duration-300">
+            <img className="rounded-xl w-full" src={mountain} alt="image" />
+            <div className="rounded-xl absolute inset-0 flex flex-col items-center justify-center text-center opacity-0 bg-black bg-opacity-25 group-hover:bg-opacity-75  duration-300 hover:opacity-100">
               <h2 className="text-white font-outfit text-4xl font-bold p-4 lg:text-6xl">
                 Join Our Mission
               </h2>
-              <p className="text-white">
+              <p className="text-white font-outfit p-4 ">
                 At Ecoyaan, we are more than just a platform. Our vision is to
                 build an eco-conscious community for people and products.
                 Consider us your partner for all things sustainable. To keep you
@@ -58,12 +58,12 @@ const Info = () => {
         {/* Fruits Image Div */}
         <div className="p-4 w-full md:w-1/3">
           <div className="relative group">
-            <img className="rounded-lg w-full" src={fruits} alt="image" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center opacity-100 bg-black bg-opacity-75 group-hover:bg-opacity-50 transition-opacity duration-300">
+            <img className="rounded-xl w-full" src={fruits} alt="image" />
+            <div className="rounded-xl absolute inset-0 flex flex-col items-center justify-center text-center opacity-0 bg-black bg-opacity-25 group-hover:bg-opacity-75 duration-300 hover:opacity-100">
               <h2 className="text-white font-outfit text-4xl font-bold p-4 lg:text-6xl">
                 Become a Seller
               </h2>
-              <p className="text-white">
+              <p className="text-white font-outfit p-4">
                 Do you run a business that is committed to sustainability in
                 every aspect of your work? Do you want to showcase your products
                 to an incredible audience of eco-conscious consumers who care?

@@ -24,7 +24,7 @@ export default function CarouselSize() {
                 <Card>
                   <CardContent className="flex aspect-square flex-col items-center justify-center p-6">
                     <img
-                      className="object-cover"
+                      className="relative object-cover"
                       src={data.image}
                       alt="images"
                     />
