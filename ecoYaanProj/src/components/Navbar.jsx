@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +33,9 @@ const Navbar = () => {
   return (
     <div className={navbarClasses}>
       <div className="flex justify-between items-center py-4 px-4">
-        <h2 className="font-outfit text-3xl font-bold">ecoyaan.</h2>
+        <h2 className="font-outfit text-3xl font-bold">
+          <Link to="/">ecoyaan.</Link>
+        </h2>
 
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-2xl">
@@ -46,7 +49,9 @@ const Navbar = () => {
             Become a Seller
           </h2>
           <h2 className="py-2 font-outfit text-lg font-semibold">Careers</h2>
-          <h2 className="py-2 font-outfit text-lg font-semibold">About us</h2>
+          <h2 className="py-2 font-outfit text-lg font-semibold">
+            <Link to="/aboutus"> About us</Link>
+          </h2>
         </div>
       </div>
 
@@ -57,7 +62,9 @@ const Navbar = () => {
             Become a Seller
           </h2>
           <h2 className="py-2 font-outfit text-lg font-semibold">Careers</h2>
-          <h2 className="py-2 font-outfit text-lg font-semibold">About us</h2>
+          <h2 className="py-2 font-outfit text-lg font-semibold">
+            <Link to="/aboutus"> About us</Link>
+          </h2>
         </div>
       )}
     </div>
