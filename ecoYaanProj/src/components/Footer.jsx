@@ -24,8 +24,10 @@ const Footer = () => {
       </div>
       <div className=" flex flex-row justify-around align-center py-4">
         <div className="p-2">
-          <h4 className="text-xl font-semibold py-2">Registered Address:</h4>
-          <p>
+          <h4 className="text-xl font-semibold py-2 px-2">
+            Registered Address:
+          </h4>
+          <p className="text-xs lg:text-md px-2">
             1-N-12T-781/1 Sri Krishna Vilasa, Urvastores
             <br /> Ashoknagar(MR), Mangalore
             <br />
@@ -33,8 +35,8 @@ const Footer = () => {
           </p>
         </div>
         <div className="p-2">
-          <h4 className="text-xl font-semibold py-2">Legal Name:</h4>
-          <p>
+          <h4 className="text-xl font-semibold py-2 px-2">Legal Name:</h4>
+          <p className="text-xs lg:text-md px-2">
             Kindkarma E-Retail Private Limited <br /> CIN: U47912KA2023PTC182592
             <br />
             Telephone: +91 9980490777

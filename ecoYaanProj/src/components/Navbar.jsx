@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
@@ -30,11 +31,15 @@ const Navbar = () => {
     isScrolled ? "bg-white shadow-md text-black" : "bg-transparent text-white"
   }`;
 
+  const closeMenu = () => isMenuOpen(false);
+
   return (
-    <div className={navbarClasses}>
+    <nav className={navbarClasses}>
       <div className="flex justify-between items-center py-4 px-4">
         <h2 className="font-outfit text-3xl font-bold">
-          <Link to="/">ecoyaan.</Link>
+          <Link to="/" onClick={closeMenu}>
+            ecoyaan.
+          </Link>
         </h2>
 
         <div className="md:hidden">
@@ -50,7 +55,9 @@ const Navbar = () => {
           </h2>
           <h2 className="py-2 font-outfit text-lg font-semibold">Careers</h2>
           <h2 className="py-2 font-outfit text-lg font-semibold">
-            <Link to="/aboutus"> About us</Link>
+            <Link to="/aboutus" onClick={closeMenu}>
+              About us
+            </Link>
           </h2>
         </div>
       </div>
@@ -63,11 +70,13 @@ const Navbar = () => {
           </h2>
           <h2 className="py-2 font-outfit text-lg font-semibold">Careers</h2>
           <h2 className="py-2 font-outfit text-lg font-semibold">
-            <Link to="/aboutus"> About us</Link>
+            <Link to="/aboutus" onClick={closeMenu}>
+              About us
+            </Link>
           </h2>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
 

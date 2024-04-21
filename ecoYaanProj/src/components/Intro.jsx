@@ -22,7 +22,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="flex flex-wrap">
-        <h4 className="py-4 font-outfit text-xl py-16 px-8">
+        <h4 className=" font-outfit text-xl py-16 px-8">
           At ecoyaan, we are more than just a platform. Our goal is to build a
           community of eco-conscious people who share a common vision and
           passion for a more sustainable world. We recognize that sustainability

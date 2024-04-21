@@ -10,7 +10,7 @@ const Info = () => {
           Shop Sustainably
         </h1>
         <h4 className="font-outfit text-md p-2 font-medium lg:text-2xl lg:py-16">
-          Shop eco-friendly and socially responsible products which don't
+          Shop eco-friendly and socially responsible products which dont
           compromise on style or quality.
         </h4>
       </div>
