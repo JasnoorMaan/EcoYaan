@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 // import Hero from "./components/Hero";
 // import Products from "./components/Products";
@@ -12,7 +12,7 @@ import AboutPage from "../src/components/pages/AboutPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <header>
         <nav>
           <Navbar />
@@ -20,9 +20,9 @@ function App() {
       </header>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/aboutus" element={<AboutPage />} />
+        <Route path="/about-us" element={<AboutPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
