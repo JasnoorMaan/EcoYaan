@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
@@ -32,14 +31,11 @@ const Navbar = () => {
   }`;
 
   const closeMenu = () => isMenuOpen(false);
-
   return (
-    <nav className={navbarClasses}>
+    <div className={navbarClasses}>
       <div className="flex justify-between items-center py-4 px-4">
         <h2 className="font-outfit text-3xl font-bold">
-          <Link to="/" onClick={closeMenu}>
-            ecoyaan.
-          </Link>
+          <Link to="/">ecoyaan.</Link>
         </h2>
 
         <div className="md:hidden">
@@ -78,7 +74,7 @@ const Navbar = () => {
           </h2>
         </div>
       )}
-    </nav>
+    </div>
   );
 };
 
