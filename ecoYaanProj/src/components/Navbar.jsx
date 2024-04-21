@@ -30,12 +30,14 @@ const Navbar = () => {
     isScrolled ? "bg-white shadow-md text-black" : "bg-transparent text-white"
   }`;
 
-  const closeMenu = () => isMenuOpen(false);
+  const closeMenu = () => setIsMenuOpen(false);
   return (
     <div className={navbarClasses}>
       <div className="flex justify-between items-center py-4 px-4">
         <h2 className="font-outfit text-3xl font-bold">
-          <Link to="/">ecoyaan.</Link>
+          <Link to="/" onClick={closeMenu}>
+            ecoyaan.
+          </Link>
         </h2>
 
         <div className="md:hidden">
